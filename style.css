@@ -1,0 +1,246 @@
+*, ::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    background-image:url(img/tarte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*header*/
+.button-connect {
+    position: absolute;
+    right: 2%;
+    top: 20px;
+}
+#logo{
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    margin: 5px;
+    height: 70px;
+    width: 80px;
+}
+.nav-bar {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: #030303;
+    list-style: none;
+}
+.list-item{
+    padding: 20px;
+}
+.button-connect {
+    position: absolute;
+    right: 2%;
+    top: 20px;
+}
+.nav-bar a {
+    font-size: 20px;
+    display: block;
+    min-width:  120px;
+    margin: 0.5rem;
+    padding: 0.4rem 0;
+    text-align: center;
+    color: #fffffe;        
+    text-decoration: none;          
+    border-radius: 4px; 
+}
+.nav-bar a:hover {
+    background-color: #f21137;
+    transition: all 1s;
+}
+/*center*/
+.center_title {
+    background-color:rgb(49, 49, 49, 0.75);
+    font-family: 'Yellowtail';
+    font-size: 100px;
+    color: #fffffe;
+    margin-bottom: 100px;
+    margin-top: 300px;
+    height: 100%;
+}
+.center_title p {
+    margin: 0;
+}
+/*carrousel*/
+.contenu_2 {
+    border-top: #030303 5px solid;
+    background-color: #68020f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    color:#fffffe;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 120px;
+}
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1300px;
+    margin: 70px auto;
+}
+.item {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    overflow:hidden;
+    flex-shrink: 0;
+}
+.item img {
+    width: 100%;
+    height: auto;
+}
+/*Footer*/
+.footer {
+    width:100%;
+    height: 90px;
+    background-color: #030303;
+}
+.footer-text-left {
+    font-size:20px;
+    padding-top: 15px;
+    padding-left:40px;
+    float:left;
+    word-spacing:20px;
+}
+.footer-content-right {
+    padding-right:40px;
+    margin-top:20px;
+    float:right;
+}  
+footer a {
+    text-decoration: none; 
+    color: #fffffe
+}
+a.menu:hover {
+    background-color:#f21137;
+    font-size:25px;
+    transition: all 1s;
+}
+.icon-style {
+    height:40px;
+    margin-left:20px;
+    margin-top:5px;
+}
+.icon-style:hover {
+    background-color:#f21137;
+    padding:5px;
+    transition: all 1s;
+}
+@media (max-width: 2560px) {
+    .center_title {
+        margin-bottom:400px;
+    }
+    .center_title {
+        margin-top: 400px;
+    }
+}
+@media (max-width: 1440px) {
+    .center_title {
+        margin-bottom: 245px;
+    }
+}
+@media (max-width: 1024px) {
+    .center_title {
+        font-size: 64px;
+        margin-left: 80px;
+        margin-top: 243px;
+    }
+}
+@media (max-width: 768px) {
+    .nav-bar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #logo {
+        position: absolute;
+        left: 360px;
+        height: 50px;
+        width: 60px;
+    }
+    #news {
+        margin-top: 60px;
+    }
+    #boutique, #contact {
+        margin-top: 10px;
+    }
+    .button-connect {
+        position: absolute;
+        right: 2%;
+        top: 70px;
+    }
+    .center_title {
+        font-size: 70px;
+        margin-left: 90px;
+        margin-top: 400px;
+    }
+}
+@media (max-width: 425px) {
+    #logo {
+        position: absolute;
+        left:185px;
+    }
+    .footer-text-left {
+        padding-top: 35px;
+        padding-left:104px;
+     }
+     .footer-content-right {
+        padding-right:135px;
+        margin-top:5px;
+    }
+    .center_title {
+        font-size: 65px;
+        margin-left: 10px;
+        margin-top: 400px;
+    }
+}
+@media (max-width: 375px) {
+    #logo {
+        position: absolute;
+        left:150px;
+    }
+    .footer-text-left {
+        padding-top: 35px;
+        padding-left:80px;
+     }
+    .footer-content-right {
+        padding-right:110px;
+        margin-top:5px;
+    }  
+}
+@media (max-width: 320px) {
+    #logo {
+        position: absolute;
+        left:125px;
+    }
+    .footer-text-left {
+        padding-top: 35px;
+        padding-left:54px;
+     }
+    .footer-content-right {
+        padding-right:75px;
+        margin-top:5px;
+    }  
+}
